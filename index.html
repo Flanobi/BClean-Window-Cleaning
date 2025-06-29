@@ -62,27 +62,13 @@
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-4">Get in Touch</h2>
         <p class="text-center text-lg text-blue-800 font-semibold mb-4">Get 20% off when you refer a friend or are referred by a friend!</p>
-        <form class="grid gap-6">
-          <input class="p-4 rounded-lg border border-gray-300" type="text" placeholder="Your Name" required />
-          <input class="p-4 rounded-lg border border-gray-300" type="email" placeholder="Your Email" required />
-          <input class="p-4 rounded-lg border border-gray-300" type="tel" placeholder="Your Phone Number" required />
-          <textarea class="p-4 rounded-lg border border-gray-300" rows="5" placeholder="Your Message" required></textarea>
+        <form class="grid gap-6" action="https://formspree.io/f/xyzjlqlw" method="POST">
+          <input class="p-4 rounded-lg border border-gray-300" type="text" name="name" placeholder="Your Name" required />
+          <input class="p-4 rounded-lg border border-gray-300" type="email" name="email" placeholder="Your Email" required />
+          <input class="p-4 rounded-lg border border-gray-300" type="tel" name="phone" placeholder="Your Phone Number" required />
+          <textarea class="p-4 rounded-lg border border-gray-300" name="message" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition">Send Message</button>
-        <form
-  action="https://formspree.io/f/xyzjlqlw"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+        </form>
         <div class="text-center mt-6">
           <p>Or call us at <strong>(208)-569-0871</strong></p>
         </div>
