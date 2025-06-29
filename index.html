@@ -68,7 +68,21 @@
           <input class="p-4 rounded-lg border border-gray-300" type="tel" placeholder="Your Phone Number" required />
           <textarea class="p-4 rounded-lg border border-gray-300" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition">Send Message</button>
-        </form>
+        <form
+  action="https://formspree.io/f/xyzjlqlw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
         <div class="text-center mt-6">
           <p>Or call us at <strong>(208)-569-0871</strong></p>
         </div>
