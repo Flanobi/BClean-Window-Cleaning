@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hall's Window Washing</title>
+  <meta name="description" content="Professional Residential Window Cleaning | Hall's Window Washing">
+  <meta property="og:image" content="https://flanobi.github.io/Halls-Window-Washing/Halls_Window_Washing_SocialPreview_Final.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -19,7 +17,7 @@
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1950&q=80') no-repeat center center / cover;
+      background: url('https://flanobi.github.io/Halls-Window-Washing/hero-clean-house.jpg') no-repeat center center / cover;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -155,13 +153,8 @@
     }
 
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.4rem;
-      }
-
-      header p {
-        font-size: 1.1rem;
-      }
+      header h1 { font-size: 2.4rem; }
+      header p  { font-size: 1.1rem; }
     }
   </style>
 </head>
@@ -211,12 +204,9 @@
 
   <section class="section" id="contact">
     <h2>Get a Free Estimate</h2>
-    <form class="contact" action="https://formspree.io/f/xyzjlqlw" method="POST">
-      <!-- SPAM BOT HONEYPOT -->
+    <form class="contact" action="https://formspree.io/f/mqkjlyve" method="POST">
       <input type="text" name="_honey" style="display:none">
-
-      <!-- REDIRECT AFTER SUBMIT -->
-      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      <input type="hidden" name="_next" value="https://flanobi.github.io/Halls-Window-Washing/thank-you.html">
 
       <label for="name">Your Name</label>
       <input type="text" id="name" name="name" required autocomplete="name">
@@ -224,8 +214,11 @@
       <label for="email">Your Email</label>
       <input type="email" id="email" name="email" required autocomplete="email">
 
+      <label for="phone">Your Phone Number</label>
+      <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
       <label for="message">How can we help?</label>
-      <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Send Request</button>
     </form>
