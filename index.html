@@ -1,232 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hall's Window Washing</title>
-  <meta name="description" content="Professional Residential Window Cleaning | Hall's Window Washing">
-  <meta property="og:image" content="https://flanobi.github.io/Halls-Window-Washing/Halls_Window_Washing_SocialPreview_Final.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
-    }
-
-    header {
-      background: url('https://flanobi.github.io/Halls-Window-Washing/hero-clean-house.jpg') no-repeat center center / cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    header h1 {
-      color: white;
-      font-size: 3.5rem;
-      font-weight: 800;
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    header p {
-      color: #fff;
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: 500;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      background: white;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #005a99;
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #005b99;
-      text-align: center;
-    }
-
-    .about, .contact {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .service-card {
-      background: #f9f9f9;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      transition: transform 0.2s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
-
-    form {
-      background: #f4f7fa;
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1.5rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #007acc;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #005a99;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #003d66;
-      color: white;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2.4rem; }
-      header p  { font-size: 1.1rem; }
+    html {
+      scroll-behavior: smooth;
     }
   </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hall's Window Washing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Hero -->
+    <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?clean-windows,house');">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center p-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hall's Window Washing</h1>
+        <p class="text-xl md:text-2xl mb-6">Professional Residential Window Cleaning</p>
+        <a href="#contact" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-100 transition">Get a Free Quote</a>
+      </div>
+    </header>
 
-  <header>
-    <div>
-      <h1>Hall's Window Washing</h1>
-      <p>Let the Light In – Residential Clarity You Can Count On</p>
-    </div>
-  </header>
+    <!-- Services -->
+    <section class="py-16 px-6 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">What We Offer</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Exterior Window Washing</h3>
+          <p>Crystal-clear exterior window cleaning for homes of all sizes.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Interior Window Washing</h3>
+          <p>Gentle and thorough cleaning of inside windows with care and detail.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Screens & Tracks</h3>
+          <p>We clean window screens and tracks to make your whole home shine.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Gutter Cleaning</h3>
+          <p>Remove debris and keep your gutters flowing freely and safely.</p>
+        </div>
+      </div>
+    </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p class="about">
-      Hall's Window Washing is dedicated exclusively to <strong>residential homes</strong>, offering premium window care with a neighborly touch. We bring natural light back into your living spaces—spotless, streak-free, and professionally done every time.
+    
+  <div class="flex justify-center mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l6-6 4 4 8-8" />
+    </svg>
+  </div>
+  <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <p class="text-lg text-gray-700 text-center">
+      Ask us about our premium water beading treatment! This advanced solution helps prevent hard water stains by causing water to roll right off your windows — keeping them clearer, longer.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="services">
-    <h2>Our Residential Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Interior & Exterior Cleaning</h3>
-        <p>Crystal-clear window cleaning inside and out, ensuring every angle shines.</p>
+
+    <section id="contact" class="bg-blue-100 py-16 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">Get in Touch</h2>
+        <p class="text-center text-lg text-blue-800 font-semibold mb-4">Get 20% off when you refer a friend or are referred by a friend!</p>
+        <form class="grid gap-6">
+          <input class="p-4 rounded-lg border border-gray-300" type="text" placeholder="Your Name" required />
+          <input class="p-4 rounded-lg border border-gray-300" type="email" placeholder="Your Email" required />
+          <input class="p-4 rounded-lg border border-gray-300" type="tel" placeholder="Your Phone Number" required />
+          <textarea class="p-4 rounded-lg border border-gray-300" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition">Send Message</button>
+        </form>
+        <div class="text-center mt-6">
+          <p>Or call us at <strong>(208)-569-0871</strong></p>
+        </div>
       </div>
-      <div class="service-card">
-        <h3>Track & Sill Detailing</h3>
-        <p>We clean beyond the glass—sills, tracks, and ledges are left fresh and grime-free.</p>
-      </div>
-      <div class="service-card">
-        <h3>Screen Washing</h3>
-        <p>Dusty or grimy screens? We gently clean them to preserve airflow and clarity.</p>
-      </div>
-      <div class="service-card">
-        <h3>Hard Water Removal</h3>
-        <p>We safely remove hard water stains without damaging your glass.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Get a Free Estimate</h2>
-    <form class="contact" action="https://formspree.io/f/mqkjlyve" method="POST">
-      <input type="text" name="_honey" style="display:none">
-      <input type="hidden" name="_next" value="https://flanobi.github.io/Halls-Window-Washing/thank-you.html">
-
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required autocomplete="name">
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required autocomplete="email">
-
-      <label for="phone">Your Phone Number</label>
-      <input type="tel" id="phone" name="phone" required autocomplete="tel">
-
-      <label for="message">How can we help?</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Request</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Hall's Window Washing – Residential Service Only | Designed for Brighter Living
-  </footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      <p>&copy; 2025 Hall's Window Washing. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
